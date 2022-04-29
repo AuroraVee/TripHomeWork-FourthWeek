@@ -6,8 +6,8 @@
     </block>
     <block wx:else>
       <view class="getImg">
-        <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像 </button>
-        <button wx:else open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像</button>
+        <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile" type="primary"> 获取头像 </button>
+        <button wx:else open-type="getUserInfo" bindgetuserinfo="getUserInfo" type="primary"> 获取头像</button>
       </view>
     </block>
   </view>

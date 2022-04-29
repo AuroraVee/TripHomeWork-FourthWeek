@@ -7,7 +7,8 @@
 
 .backImage {
   position: absolute;
-  left: 30px;
+  left: 50%;
+  transform: translateX(-50%);
   top: 70px;
 }
 
@@ -19,7 +20,8 @@
 
 .btnSend {
   position: absolute;
-  left: 110px;
+  left: 50%;
+  transform: translateX(-50%);
   top: 320px;
 }
 
@@ -32,6 +34,7 @@
 
 .getImg {
   position: absolute;
-  left: 30px;
+  left: 50%;
+  transform: translateX(-50%);
   top: 0px;
 }
