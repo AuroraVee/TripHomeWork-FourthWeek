@@ -1,0 +1,30 @@
+<!--index.wxml-->
+<view class="container">
+  <view wx:if="{{!isMe}}">
+    <block wx:if="{{hasUserInfo}}">
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+    </block>
+    <block wx:else>
+      <view class="getImg">
+        <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像 </button>
+        <button wx:else open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像</button>
+      </view>
+    </block>
+  </view>
+  <view class="backImage">
+    <image src="https://img.cc0.cn/pixabay/2019102901422723673.jpg!cc0.cn.jpg" mode="widthFix"></image>
+  </view>
+  <view class="inputArea">
+    <block wx:if="{{isMe}}">
+      <input type="text" value="{{toName}}" bindinput="toInput" />
+      <input type="text" value="{{mainContent}}" bindinput="mainInput" />
+      <input type="text" value="{{lastContent}}" bindinput="lastInput" />
+    </block>
+    <block wx:else>
+      <view>{{toName}}</view>
+      <view> {{mainContent}}</view>
+      <view>{{lastContent}}</view>
+    </block>
+  </view>
+  <button open-type="share" type="primary" class="btnSend" wx:if="{{isMe}}">发送给好友</button>
+</view>

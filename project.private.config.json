@@ -1,0 +1,24 @@
+{
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "m1",
+          "pathName": "pages/index/index",
+          "query": "toname=w&mainContent=t&last=wjx",
+          "scene": null,
+          "launchMode": "default"
+        }
+      ]
+    }
+  }
+}
